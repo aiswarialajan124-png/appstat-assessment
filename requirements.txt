@@ -1,0 +1,14 @@
+# Jupyter notebook
+notebook
+
+# Plotting
+matplotlib
+
+# Numerical arrays
+numpy
+
+# Data frames
+pandas
+
+# Scientific computing
+scipy
