@@ -1,30 +1,57 @@
 # Assessment Submission for Applied Statistics
 
 This repository contains my submission for the module Applied Statistics.
-The project is written in a single Jupyter notebook, in Python.
-Everything needed to run the notebook is included in this repository.
-
-## Quick look
-
-- You can click on [problems.ipynb] is this repository and GitHub will display it in static format.
-- You can view the notebook in [Google Collab]().
-- You can view the notebook using [nbviewer]() also.
-
-## Running the Notebook
-
-In order to run the `problems.ipynb` you can follow these steps:
-
-1. Clone the repository using [git](https://git-scm.com/).
-2. Ensure you have [Python](https://www.python.org/) installed. An easy way to get Python is to use [uv](https://docs.astral.sh/uv/) or [Anaconda](https://anaconda.org/). 
-3. And so on ..
-
-## Dependancies
-
-The notebook depends on the [numpy](https://numpy.org/) package, the [matplotlib](https://matplotlib.org/) package...
-
-## About the Notebook
 
 The notebook focuses on the [Iris Dataset](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv).
+
+## Contents
+- `problems.ipynb`: the main notebook with four problems, explanations and results.
+- `requirements.txt`: the Python packages needed to run the notebook.
+- `AGENTS.md`: the agents file required by the assessment brief.
+- `data/`: the dataset used by the notebook.
+- `img/`: saved plots and figures.
+
+## Requirements
+- Python 3.13 (developed with 3.13.9)
+- The packages listed in `requirements.txt`: [numpy](https://numpy.org), [pandas](https://pandas.pydata.org/), [matplotlib](https://matplotlib.org/), [scipy](https://scipy.org/) and [notebook](https://jupyter.org/)
+
+## How to run
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/aiswarialajan124-png/appstat-assessment.git
+   cd appstat-assessment
+   ```
+2. (Optional) Create and activate a virtual environment:
+
+   ```
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+
+   On Windows, activate it with:
+
+   ```
+   .venv\Scripts\activate
+   ```
+3. Install the dependencies:`
+
+   ```
+   pip install -r requirements.txt
+   ```
+4. Open the notebook:
+
+   ```
+   jupyter notebook problems.ipynb
+   ```
+
+5. Run all cells from top to bottom (Kernel > Restart Kernel and Run all Cells).
+
+## Problems covered
+1. **Exploring petal length:** histograms with fitted normal distributions, overall and per species.
+2. **Correlation:** Pearson correlation between petal length and petal width, overall and per species.
+3. **t-tests:** pairwise independent-samples t-tests between species.
+4. **ANOVA:** one-way ANOVA, and why it is preferable to multiple t-tests.
 
 ## About the Author
 
